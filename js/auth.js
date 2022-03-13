@@ -13,3 +13,7 @@ function auth() {
     };
 }
 submitLogin.addEventListener('click', auth) //Invocar função de auth ao clicar no botão submit
+
+/* function submitOnInput() {
+
+} */

@@ -15,8 +15,6 @@ const setLocalStorageData = () => {
     else {
         alert('Insira todos os campos corretamente para criar a conta')
     }
-
-
 }
 
 
