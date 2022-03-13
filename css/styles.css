@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fafafa;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+a, p, b, i, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    height: auto;
+}
+.user-name-logged
+{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    color: #fafafa;
+}
+.login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 80%;
+    border-radius: 4px;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: auto;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+
+.header-welcome {
+    width: 100%;
+    height: 8vh;
+}
+
+.header-welcome h3 {
+    font-size: 1.4rem;
+    color: #222;
+    font-weight: bolder;
+}
+
+.login-body {
+    margin-top: 5vh;
+    background-color: #222;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.login-body .input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #222;
+    border-radius: 4px;
+    padding: 15px 10px;
+    margin: .5rem 0;
+    box-shadow: 4px 4px 18px black;
+}
+
+.login-body button {
+    border: none;
+    background-color: #222;
+    outline: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+    transition: all .3s ease;
+    cursor: pointer;
+    box-shadow: 4px 4px 18px black;
+}
+
+.login-body button:hover {
+    transform: scale(1.1);
+}
+.login-body span i 
+{
+    color: red;
+}
+.submit-acc {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
+
+.submit-acc a {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+
+@media(max-width: 600px) {
+    .header-welcome h3 {
+        text-align: center;
+    }
+
+    .submit-acc {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .submit-acc a {
+        margin-top: 1rem;
+        color: #222;
+    }
+
+    .login-body {
+        background-color: transparent;
+        padding: 0;
+    }
+    .login-body span 
+    {
+        color: #222;
+        margin: 1rem 0;
+    }
+ 
+}
