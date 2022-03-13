@@ -5,8 +5,8 @@ let submit = document.querySelector('#button-submit')
 
 // Armanezar valores dos inputs no local storage
 
-const setLocalStorageData = () => {
-    if (user.value.length > 1 && pass.value.length >= 5) {
+const setLocalStorageData = () => { 
+    if (user.value.length > 1 && pass.value.length >= 5) { //Validação
         localStorage.setItem('name', user.value)
         localStorage.setItem('password', pass.value)
         localStorage.setItem('cpf', cpf.value)
