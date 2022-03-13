@@ -13,7 +13,7 @@ const setLocalStorageData = () => {
         alert('Conta criada com sucesso')
     }
     else {
-        alert('Insira todos os campos para criar a conta')
+        alert('Insira todos os campos corretamente para criar a conta')
     }
 
 
