@@ -1,11 +1,10 @@
-let userLogin = document.querySelector('#input-user')
-let passLogin = document.querySelector('#input-pass')
 let submitLogin = document.querySelector('#button-submit')
-
 function auth() {
+    let userLogin = document.querySelector('#input-user')
+    let passLogin = document.querySelector('#input-pass')
     if (userLogin.value === localStorage.getItem('name') //Resposta caso os campos se coincidirem com os do localStorage
         && passLogin.value === localStorage.getItem('password')) {
-        alert(`Olá ${localStorage.getItem('name')}, você foi logado `)
+        alert(`Olá ${localStorage.getItem('name')}, você foi logado(a) `)
         let nameLog = document.querySelector('.user-name-logged').innerHTML = `${localStorage.getItem('name')}`
     }
     else {
@@ -14,6 +13,6 @@ function auth() {
 }
 submitLogin.addEventListener('click', auth) //Invocar função de auth ao clicar no botão submit
 
-/* function submitOnInput() {
+function submitOnInput() {
 
-} */
+} 

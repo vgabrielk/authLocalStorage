@@ -1,11 +1,11 @@
-let user = document.querySelector('#input-user')
-let pass = document.querySelector('#input-pass')
-let cpf = document.querySelector('#input-cpf')
 let submit = document.querySelector('#button-submit')
 
 // Armanezar valores dos inputs no local storage
 
-const setLocalStorageData = () => { 
+const setLocalStorageData = () => {
+    let user = document.querySelector('#input-user')
+    let pass = document.querySelector('#input-pass')
+    let cpf = document.querySelector('#input-cpf')
     if (user.value.length > 1 && pass.value.length >= 5) { //Validação
         localStorage.setItem('name', user.value)
         localStorage.setItem('password', pass.value)
