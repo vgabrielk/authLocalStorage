@@ -11,7 +11,7 @@ const setLocalStorageData = () => {
         localStorage.setItem('password', pass.value)
         localStorage.setItem('cpf', cpf.value)
         alert('Conta criada com sucesso')
-        window.location.href('https://vgabrielk.github.io/authLocalStorage/index.html')
+        window.location.replace('/')
     }
     else {
         alert('Insira todos os campos corretamente para criar a conta')
